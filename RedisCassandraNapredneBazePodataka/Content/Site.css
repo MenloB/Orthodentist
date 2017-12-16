@@ -1,0 +1,59 @@
+﻿body {
+    padding-bottom: 20px;
+}
+
+/* Set padding to keep content from hitting the edges */
+.body-content {
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+/* Override the default bootstrap behavior where horizontal description lists 
+   will truncate terms that are too long to fit in the left column 
+*/
+.dl-horizontal dt {
+    white-space: normal;
+}
+
+/* Set width on the form input elements since they're 100% wide by default */
+input,
+select,
+textarea {
+    max-width: 280px;
+}
+
+.jumbotron {
+    margin-bottom: 0px;
+}
+
+.jumbotron-2 {
+    background: url(../Images/overlay.png), url(../Images/daniel-frank-201417.jpg) center no-repeat;
+    background-size: cover;
+    height: 550px;
+}
+
+hr {
+    max-width: 50px;
+    border-width: 3px;
+    border-color: #4BBF73;
+}
+
+.fixed-top {
+    transition: all .4s ease-in-out;
+}
+
+section {
+    padding: 8rem;
+}
+
+section#getting-started {
+    padding: 4rem;
+    overflow: hidden;
+    height: 300px;
+}
+
+div.started-photo {
+    background: url(../Images/daniel-wirtz-369005.jpg) center center no-repeat;
+    background-size: cover;
+    height: 400px;
+}

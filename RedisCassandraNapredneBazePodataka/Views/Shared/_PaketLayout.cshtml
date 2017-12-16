@@ -1,0 +1,75 @@
+﻿@{ 
+    ViewBag.Title = "DentSoft";
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewBag.Title - Paketi</title>
+    @Styles.Render("~/Content/css")
+    @Scripts.Render("~/bundles/modernizr")
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+        <a class="navbar-brand" href="#">Dentsoft</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarColor01" aria-controls="navbarColor01" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarColor01">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                    @Html.ActionLink("Početna", "Index", "Home", new { }, new { @class = "nav-link" })<span class="sr-only">(current)</span>
+                </li>
+                <li class="nav-item">
+                    @Html.ActionLink("Paketi", "Index", "Paket", new { }, new { @class = "nav-link" })
+                </li>
+                <li class="nav-item">
+                    @Html.ActionLink("Delatnosti", "Delatnosti", "Home", new { }, new { @class = "nav-link" })
+                    @*<a class="nav-link" href="#">Delatnosti</a>*@
+                </li>
+                <li class="nav-item">
+                    @Html.ActionLink("O Nama", "Onama", "Home", new { }, new { @class = "nav -link" })
+                    @*<a class="nav-link" href="#">O Nama</a>*@
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Cenovnik</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Blog</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Contact</a>
+                </li>
+            </ul>
+            <ul class="navbar-nav mr-1">
+                <li class="my-4 my-lg-0">
+                    <a class="nav-link" href="#" style="color:#4BBF73">Prijava</a>
+                </li>
+                <li style="margin-top:11px">|</li>
+                <li class="my-4 my-lg-0">
+                    <a class="nav-link" href="#" style="color:#4BBF73">Registracija</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <div>
+        @RenderBody()
+    </div>
+
+    <footer>
+        <div class="container">
+            <p class="text-white">&copy; DateTime.Year - DentSoft</p>
+        </div>
+    </footer>
+
+    @Scripts.Render("~/bundles/jquery")
+    @Scripts.Render("~/bundles/bootstrap")
+    @Scripts.Render("~/Scripts/app.js")
+    @RenderSection("scripts", required: false);
+</body>
+</html>
