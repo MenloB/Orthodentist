@@ -39,7 +39,12 @@ hr {
 }
 
 .fixed-top {
+    animation: fixed-animate .8s ease-in-out;
+    -webkit-animation: fixed-animate .8s ease-in-out;
     transition: all .4s ease-in-out;
+    -webkit-transition: all .4s ease-in-out;
+    animation-fill-mode: forwards;
+    -webkit-animation-fill-mode: forwards;
 }
 
 section {
@@ -56,4 +61,9 @@ div.started-photo {
     background: url(../Images/daniel-wirtz-369005.jpg) center center no-repeat;
     background-size: cover;
     height: 400px;
+}
+
+@keyframes fixed-animate {
+    from {height: 89.2px;}
+    to {height: 64px; }
 }

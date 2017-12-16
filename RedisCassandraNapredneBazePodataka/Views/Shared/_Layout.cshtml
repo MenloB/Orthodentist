@@ -4,6 +4,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>@ViewBag.Title - DentSoft</title>
+    @Styles.Render("~/Content/font-awesome/css/font-awesome.min.css")
     @Styles.Render("~/Content/css")
     @Scripts.Render("~/bundles/modernizr")
 </head>
@@ -21,19 +22,18 @@
                 </li>
                 <li class="nav-item">
                     @Html.ActionLink("Paketi", "Index", "Paket", new { }, new { @class = "nav-link" })
-                    
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">Delatnosti</a>
+                    @Html.ActionLink("Delatnosti", "Delatnosti", "Home", new { }, new { @class = "nav-link" })
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">O Nama</a>
+                    @Html.ActionLink("O Nama", "Onama", "Home", new { }, new { @class = "nav-link" })
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">Cenovnik</a>
+                    @Html.ActionLink("Cenovnik", "Cenovnik", "Home", new { }, new { @class = "nav-link" })
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">Blog</a>
+                    @Html.ActionLink("Blog", "Index", "Blog", new { }, new { @class = "nav-link" })
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="#">Contact</a>
@@ -51,22 +51,22 @@
         </div>
     </nav>
 
-    <div class="jumbotron jumbotron-2">
+    <header class="jumbotron jumbotron-2 masthead text-center text-white d-flex">
         <div class="container my-auto">
-            <div class="row">
-                <div class="col-lg-10 mx-auto">
-                    <h1 class="display-4 text-white text-center">
-                    <strong>Vaš omiljeni ortodontista sada i na webu</strong></h1>
-                    <hr />
-                </div>
-                <div class="col-lg-8 mx-auto">
-                    <p class="text-faded mb-5 text-white" style="text-align:center; font-size: 16px;">Proverite zašto smo najbolji u gradu. Zašto imamo toliko pozitivnih kritika, razbijajući sve predrasude o zubarima.
-                    Kombinovanje dugogodišnjeg znanja sa najnovijim tehnologijama u svetu za održavanje zuba obećavamo da će Vaš osmeh blistati bolje nego ikad.</p>
-                    <a class="btn btn-primary btn-xl js-scroll-trigger" href="#about">Saznajte više</a>
+                <div class="row">
+                    <div class="col-lg-10 mx-auto">
+                        <h1 class="display-4 text-white text-center">
+                        <strong>Vaš omiljeni ortodontista sada i na webu</strong></h1>
+                        <hr />
+                    </div>
+                    <div class="col-lg-8 mx-auto">
+                        <p class="text-faded mb-5 text-white" style="text-align:center; font-size: 16px;">Proverite zašto smo najbolji u gradu. Zašto imamo toliko pozitivnih kritika, razbijajući sve predrasude o zubarima.
+                        Kombinovanje dugogodišnjeg znanja sa najnovijim tehnologijama u svetu za održavanje zuba obećavamo da će Vaš osmeh blistati bolje nego ikad.</p>
+                        <a class="btn btn-primary btn-xl js-scroll-trigger" href="#about">Saznajte više</a>
+                    </div>
                 </div>
             </div>
-        </div>
-    </div>
+    </header>
 
     <div class="">
         @RenderBody()
