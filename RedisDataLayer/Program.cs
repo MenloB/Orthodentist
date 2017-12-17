@@ -29,14 +29,5 @@ namespace RedisDataLayer
 
             Console.WriteLine(data);
         }
-
-        //public static List<Intervention> GetAllInterventions(string key)
-        //{
-        //    List<Intervention> result = new List<Intervention>();
-        //    IDatabase db = connectionMultiplexer.GetDatabase();
-
-        //    string data = db.StringGet("key");
-            
-        //}
     }
 }

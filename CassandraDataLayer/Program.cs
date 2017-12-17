@@ -1,8 +1,5 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+using CassandraDataLayer.QueryEntities;
 
 namespace CassandraDataLayer
 {
@@ -10,6 +7,10 @@ namespace CassandraDataLayer
     {
         static void Main(string[] args)
         {
+            User user = DataProvider.GetUserByUsername("r1dl3r");
+
+            Console.WriteLine(user.ToString());
+            Console.ReadKey();
         }
     }
 }

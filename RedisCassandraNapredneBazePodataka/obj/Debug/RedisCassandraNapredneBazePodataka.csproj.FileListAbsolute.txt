@@ -105,3 +105,6 @@ C:\Users\Nikola\Documents\Visual Studio 2017\Projects\RedisCassandraNapredneBaze
 C:\Users\Nikola\Documents\Visual Studio 2017\Projects\RedisCassandraNapredneBazePodataka\RedisCassandraNapredneBazePodataka\obj\Debug\RedisCassandraNapredneBazePodataka.csproj.CoreCompileInputs.cache
 C:\Users\Nikola\Documents\Visual Studio 2017\Projects\RedisCassandraNapredneBazePodataka\RedisCassandraNapredneBazePodataka\obj\Debug\RedisCassandraNapredneBazePodataka.dll
 C:\Users\Nikola\Documents\Visual Studio 2017\Projects\RedisCassandraNapredneBazePodataka\RedisCassandraNapredneBazePodataka\obj\Debug\RedisCassandraNapredneBazePodataka.pdb
+C:\Users\Nikola\Documents\Visual Studio 2017\Projects\RedisCassandraNapredneBazePodataka\RedisCassandraNapredneBazePodataka\bin\CassandraDataLayer.exe
+C:\Users\Nikola\Documents\Visual Studio 2017\Projects\RedisCassandraNapredneBazePodataka\RedisCassandraNapredneBazePodataka\bin\CassandraDataLayer.pdb
+C:\Users\Nikola\Documents\Visual Studio 2017\Projects\RedisCassandraNapredneBazePodataka\RedisCassandraNapredneBazePodataka\bin\CassandraDataLayer.exe.config

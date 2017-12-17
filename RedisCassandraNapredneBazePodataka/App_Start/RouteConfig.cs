@@ -20,6 +20,12 @@ namespace RedisCassandraNapredneBazePodataka
             );
 
             routes.MapRoute(
+                name: "GetUser",
+                url: "{controller}/{action}/{id}",
+                defaults: new { controller = "Home", action = "GetUser", id = "" }
+            );
+
+            routes.MapRoute(
                 name: "Paket",
                 url: "{controller}/{id}",
                 defaults: new { controller = "Paket", action = "Index", id = "" }

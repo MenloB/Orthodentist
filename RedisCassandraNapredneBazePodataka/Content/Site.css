@@ -39,6 +39,7 @@ hr {
 }
 
 .fixed-top {
+    box-shadow: 0px 0px 10px 1px rgba(0, 0, 0, 0.7);
     animation: fixed-animate .8s ease-in-out;
     -webkit-animation: fixed-animate .8s ease-in-out;
     transition: all .4s ease-in-out;

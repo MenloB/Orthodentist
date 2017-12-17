@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Web;
 using System.Web.Mvc;
+using CassandraDataLayer;
 
 namespace RedisCassandraNapredneBazePodataka.Controllers
 {
@@ -17,7 +18,12 @@ namespace RedisCassandraNapredneBazePodataka.Controllers
         {
             ViewBag.Message = "Your application Onama page.";
 
-            return View();
+            return Content(DataProvider.GetUserByUsername("z3r0d4y").ToString());
+        }
+
+        public ActionResult GetUsers()
+        {
+            return Content(DataProvider.GetAllUsers()[0].ToString());
         }
 
         public ActionResult Delatnosti()
